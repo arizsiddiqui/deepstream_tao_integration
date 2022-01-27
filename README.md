@@ -4,11 +4,11 @@ This repository contains notebooks and companion code in one single place. The n
 
 SDK versions supported: 5.0+
 
-This repository was tested on an NVIDIA T4 GPU, and recommends the Pretrained models be downloaded separately in the [models](models/) folder.
+This repository was tested on an NVIDIA T4 GPU, and recommends that the TAO Pre-trained models be downloaded separately into the [models](models/) folder.
 
 ## The Notebooks
 
-There are two Jupyter Notebooks on this repository, titled `TAO_Integration_pgie` and `TAO_Integration-sgie` respectively.
+There are two Jupyter Notebooks on this repository, titled `TAO_Integration_pgie` and `TAO_Integration_sgie` respectively.
 
 [TAO_Integration_pgie](notebooks/TAO_Integration_pgie.ipynb): This notebook explains and walks through the steps to create a simple 4-class object detection pipeline using TrafficCamNet as the primary inference engine.
 
@@ -22,4 +22,4 @@ There are two Jupyter Notebooks on this repository, titled `TAO_Integration_pgie
 <img src="images/sgie_output.jpg" alt="bindings pipeline" height="600px"/>
 </p>
 
-Both the notebooks contain necessary explanations within themselves.
+Both the notebooks also contain necessary explanations within themselves.
