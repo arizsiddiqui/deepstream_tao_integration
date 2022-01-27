@@ -12,10 +12,14 @@ There are two Jupyter Notebooks on this repository, titled `TAO_Integration_pgie
 
 [TAO_Integration_pgie](notebooks/TAO_Integration_pgie.ipynb): This notebook explains and walks through the steps to create a simple 4-class object detection pipeline using TrafficCamNet as the primary inference engine.
 
-[](images/pgie_output.jpg)
+<p align="center">
+<img src="images/pgie_output.jpg" alt="bindings pipeline" height="600px"/>
+</p>
 
 [TAO_Integration_sgie](notebooks/TAO_Integration_sgie.ipnb): This notebook explains and walk through the steps to create a 4-class object detection and classification pipeline, using TrafficCamNet as the primary inference engine and VehicleTypeNet as the secondary inference engine.
 
-[](images/sgie_output.jpg)
+<p align="center">
+<img src="images/sgie_output.jpg" alt="bindings pipeline" height="600px"/>
+</p>
 
 Both the notebooks contain necessary explanations within themselves.
