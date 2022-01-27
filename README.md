@@ -1,3 +1,21 @@
 # Integrating TAO Models in a DeepStream Pipeline
 
-In this repository, we take pre-trained models via Nvidia TAO (available via NGC) and integrate them in a DeepStream pipeline. Our [sample video](videos/sample_720p.h264), upon which the inference engine is run, is a video captured from a busy road on a a clear day with lots of cars and people in the frame. There are two notebooks available in the [Notebooks](notebooks/) section, one on running a primary inference engine on the video(referred to as PGIE in DeepStream), to detect vehicles and people in each frame. In the second notebook, we run a secondary classifier engine(SGIE) along with our primary detector engine, which works on every deteacted object identified as a 'Car' to identify what kind of vehicle(sedan, suv, truck, etc) it is. The models we use are TrafficCamNet for PGIE and VehicleTypeNet for SGIE. The essential libraries used in  these notebooks are stored in the [source_code](source_code/) section, and should not be touched until more necessary files are required.
+This repository contains notebooks and companion code in one single place. The notebooks offer an insight into integrating TAO Pretrained models (available from [NGC Catalog](https://catalog.ngc.nvidia.com)) into DeepStream pipeline to accelerate video inferencing.
+
+SDK versions supported: 5.0+
+
+This repository was tested on an NVIDIA T4 GPU, and recommends the Pretrained models be downloaded separately in the [models](models/) folder.
+
+## The Notebooks
+
+There are two Jupyter Notebooks on this repository, titled `TAO_Integration_pgie` and `TAO_Integration-sgie` respectively.
+
+[TAO_Integration_pgie](notebooks/TAO_Integration_pgie.ipynb): This notebook explains and walks through the steps to create a simple 4-class object detection pipeline using TrafficCamNet as the primary inference engine.
+
+[](images/pgie_output.jpg)
+
+[TAO_Integration_sgie](notebooks/TAO_Integration_sgie.ipnb): This notebook explains and walk through the steps to create a 4-class object detection and classification pipeline, using TrafficCamNet as the primary inference engine and VehicleTypeNet as the secondary inference engine.
+
+[](images/sgie_output.jpg)
+
+Both the notebooks contain necessary explanations within themselves.
