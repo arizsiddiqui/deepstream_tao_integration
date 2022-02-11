@@ -2,7 +2,7 @@
 
 This repository contains notebooks and companion code in one single place. The notebooks offer an insight into integrating TAO Pretrained models (available from [NGC Catalog](https://catalog.ngc.nvidia.com)) into DeepStream pipeline to accelerate video inferencing.
 
-SDK versions supported: 5.0+
+SDK versions supported: 5.0+ <br>
 SDK version tested: 5.0-20.07-triton
 
 This repository was tested on an NVIDIA T4 GPU, and recommends that the TAO Pre-trained models be downloaded separately into the [models](models/) folder.
